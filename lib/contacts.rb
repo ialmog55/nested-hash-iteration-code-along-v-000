@@ -28,7 +28,7 @@ require 'pry'
 def remove_strawberry(contacts)
   contacts.each do |person,data|
     if person ==   "Freddy Mercury"
-      data[:favorite_ice_cream_flavors].shift("strawberry")
+      data.each do |attribute,value|
     end
   end
 contacts
